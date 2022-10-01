@@ -1,0 +1,23 @@
+
+y
+java:S1989"dHandle the following exceptions that could be thrown by "getAllUser": ServletException, IOException.(×‡ûT
+‚
+java:S1989!"eHandle the following exceptions that could be thrown by "getUserById": ServletException, IOException.(ıô¬8½÷ç€¹0
+™
+java:S1130("wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(ïé©½øÿÿÿÿ8üñæ€¹0
+™
+java:S11303"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(òıÔÿÿÿÿÿ8ÿñæ€¹0
+E
+java:S11723"*Remove this unused method parameter "req".(òıÔÿÿÿÿÿ
+k
+java:S1989L"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ
+f
+java:S1989S"PHandle the following exception that could be thrown by "getReader": IOException.(Èİó°
+j
+java:S1989V"OHandle the following exception that could be thrown by "readLine": IOException.(Ç½Œâıÿÿÿÿ
+m
+java:S1989Z"WHandle the following exception that could be thrown by "fromJson": JsonSyntaxException.(Èçà¿
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(ÒÒôÅ
+t
+java:S1989k"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(‰´©êøÿÿÿÿ
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(ÒÒôÅ

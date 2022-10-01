@@ -1,0 +1,19 @@
+
+k
+java:S1989("PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ
+k
+java:S1989<"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ
+f
+java:S1989E"PHandle the following exception that could be thrown by "getReader": IOException.(ÈÝó°
+j
+java:S1989H"OHandle the following exception that could be thrown by "readLine": IOException.(Ç½Œâýÿÿÿÿ
+r
+java:S1989M"WHandle the following exception that could be thrown by "fromJson": JsonSyntaxException.(˜ô“ýüÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(û¬¸ïþÿÿÿÿ
+o
+java:S1989^"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(²äÛÓ
+t
+java:S1989_"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(»ˆ¾êÿÿÿÿÿ
+t
+java:S1989`"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ð»Ä¤úÿÿÿÿ
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(û¬¸ïþÿÿÿÿ8ÇØË…¹0

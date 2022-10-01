@@ -1,0 +1,21 @@
+
+r
+java:S1989)"PHandle the following exception that could be thrown by "getAllJob": IOException.(Ì÷çìúÿÿÿÿ8¶ô€¹0
+m
+java:S1989,"QHandle the following exception that could be thrown by "getJobById": IOException.(èÖ›;8Şœô€¹0
+G
+java:S1172="*Remove this unused method parameter "req".(‰é¡ï8”Ôò€¹0
+r
+java:S1989W"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ8âò€¹0
+m
+java:S1989`"PHandle the following exception that could be thrown by "getReader": IOException.(Èİó°8äò€¹0
+q
+java:S1989c"OHandle the following exception that could be thrown by "readLine": IOException.(Ç½Œâıÿÿÿÿ8åò€¹0
+t
+java:S1989h"WHandle the following exception that could be thrown by "fromJson": JsonSyntaxException.(‡ÓÕí8åò€¹0
+Z	java:S106j"9Replace this use of System.out or System.err by a logger.(éí÷„ùÿÿÿÿ8æò€¹0
+U	java:S106{"9Replace this use of System.out or System.err by a logger.(µ…©é8éò€¹0
+c
+java:S1128"ARemove this unused import 'cybersoft.java18.crm.model.RoleModel'.(‡¼øÒüÿÿÿÿ8«ö€¹0
+i
+java:S1128"GRemove this unused import 'cybersoft.java18.crm.services.RoleServices'.(¸ò¡şÿÿÿÿ8«ö€¹0

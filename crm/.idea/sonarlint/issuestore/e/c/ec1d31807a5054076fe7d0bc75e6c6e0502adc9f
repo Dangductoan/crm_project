@@ -1,0 +1,8 @@
+
+p
+java:S3008
+"SRename this field "INSTANCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ëö¾8ÏŸÎÿ¸0
+n
+java:S1128"LRemove this unused import 'cybersoft.java18.crm.respository.TaskRepository'.(’Ï²úÿÿÿÿ8×ŸÎÿ¸0
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ÙŸÎÿ¸0
