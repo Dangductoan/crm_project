@@ -19,12 +19,13 @@ $(document).ready(function() {
         <td>
             <a href="#" class="btn btn-sm btn-primary btn-update"job-id=${value.id}>Sửa</a>
             <a href="#" class="btn btn-sm btn-danger btn-delete" job-id=${value.id}>Xóa</a>
-            <a href="groupwork-details.html" class="btn btn-sm btn-info">Xem</a>
+            <a href="#" class="btn btn-sm btn-info btn-profile" job-id=${value.id}>Xem</a>
         </td>
     </tr>`
     $("#example tbody").append(row);
        })
     })
+  
       //add role
    $('#btn-save-job').click(function(e) {
     e.preventDefault();
@@ -88,6 +89,13 @@ $(document).ready(function() {
         
         window.location.replace("http://127.0.0.1:5500/job-update.html")
     });
+    $(document).on('click', 'a.btn-profile', function(e) {
+      e.preventDefault(); 
+      const jobId = e.target.getAttribute("job-id");
+      localStorage.setItem("jobId", jobId);
+      
+      window.location.replace("http://127.0.0.1:5500/groupwork-details.html")
+  });
       $('#btn-update-job').click(function(e) {
         
         e.preventDefault();

@@ -1,0 +1,15 @@
+
+k
+java:S1192"IDefine a constant instead of duplicating this literal "password" 3 times.(š‚ùÈøÿÿÿÿ8áÆÚ¢¹0
+e
+java:S1192"HDefine a constant instead of duplicating this literal "role_id" 3 times.(ÓÆº8âÆÚ¢¹0
+i
+java:S1192"GDefine a constant instead of duplicating this literal "avatar" 3 times.(Â‚«Ÿùÿÿÿÿ8âÆÚ¢¹0
+k
+java:S1192"IDefine a constant instead of duplicating this literal "fullname" 3 times.(•Çã™ÿÿÿÿÿ8âÆÚ¢¹0
+c
+java:S1192"FDefine a constant instead of duplicating this literal "email" 3 times.(àİßš8çÆÚ¢¹0
+c
+java:S1128"ARemove this unused import 'cybersoft.java18.crm.model.RoleModel'.(‡¼øÒüÿÿÿÿ8Û²º¤¹0
+e
+java:S1128"CRemove this unused import 'cybersoft.java18.crm.model.StatusModel'.(üãßÒûÿÿÿÿ8Û²º¤¹0

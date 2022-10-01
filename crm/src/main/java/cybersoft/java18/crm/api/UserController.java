@@ -19,7 +19,8 @@ import java.util.Objects;
 
 @WebServlet(name="user",urlPatterns = {
         UrlUtils.URL_USER,
-        UrlUtils.URL_USER_BY_ID
+        UrlUtils.URL_USER_BY_ID,
+        UrlUtils.URL_USER_LOGIN
 })
 public class UserController extends HttpServlet {
     final Gson gson = new Gson();
@@ -94,6 +95,34 @@ public class UserController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        if (Objects.equals(req.getServletPath(), UrlUtils.URL_USER)) {
+            createUser(req, resp);
+
+        }
+        if (Objects.equals(req.getServletPath(),  UrlUtils.URL_USER_LOGIN)) {
+            processLogin(req, resp);
+
+
+        }
+
+
+    }
+
+    private void processLogin(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
+        var usermodel = UserServices.getInstance().login(req.getParameter("email"), req.getParameter("password"));
+
+        if (usermodel == null) {
+            req.setAttribute("errors", "email or password is incorrect!");
+
+        } else {
+            req.getSession().setAttribute("currentUser", usermodel);
+        }
+
+
+    }
+
+    private void createUser(HttpServletRequest req, HttpServletResponse resp) {
         String fullName = req.getParameter("fullName");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
@@ -107,6 +136,5 @@ public class UserController extends HttpServlet {
         userModel.setRoleId(Integer.parseInt(roleId));
         UserServices.getInstance().createUser(userModel);
         System.out.println(userModel);
-
     }
 }
