@@ -200,7 +200,6 @@ function GetStatusById(value,username,jobName) {
         <td>
             <a href="#" class="btn btn-sm btn-primary btn-update"task-id=${value.id}>Sửa</a>
             <a href="#" class="btn btn-sm btn-danger btn-delete" task-id=${value.id}>Xóa</a>
-            <a href="groupwork-details.html" class="btn btn-sm btn-info">Xem</a>
         </td>
     </tr>`
     $("#example tbody").append(row);

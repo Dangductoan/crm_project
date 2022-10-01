@@ -20,6 +20,16 @@ public class UserServices {
         return userRepository.getAllUser();
     }
     public UserModel getUserById(String id) {return userRepository.getUserById(id);}
+    public UserModel login(String email,String password) {
+        UserModel userModel =  userRepository.getUserByEmail(email);
+        if (userModel == null)
+            return null;
+
+        if (userModel.getPassword().equals(password))
+            return userModel;
+
+        return null;
+    }
     public Integer deleteUserById(String id) {
         return userRepository.deleteUserById(id);
     }

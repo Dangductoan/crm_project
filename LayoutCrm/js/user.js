@@ -1,37 +1,5 @@
 
-// $(document).ready(function() {
-//     $.ajax({
-//         url:"http://localhost:8080/crm/api/role",
-//         method:"GET",
-//         dataType:"json",
-//         success: function(data) {
-//             console.log(data)
-//             $.ajax({
-//                 url:"http://localhost:8080/crm/api/user",
-//                 method:"GET"
-//             }).done(function(result) {
-//                   $("#example tbody").empty();
-//                   $.each(result,function(index,value) {
-                  
-//                     var row = ` <tr>
-//                     <td>${value.id}</td>
-//                     <td>${value.fullName}</td>
-//                     <td></td>
-//                     <td>${value.email}</td>
-//                     {}
-//                     <td>${data[value.roleId].name}</td>
-//                     <td>
-//                         <a href="#" class="btn btn-sm btn-primary">Sửa</a>
-//                         <a href="#" class="btn btn-sm btn-danger">Xóa</a>
-//                         <a href="user-details.html" class="btn btn-sm btn-info">Xem</a>
-//                     </td>
-//                 </tr>`
-//                 $("#example tbody").append(row);
-//                   })
-//             })
-//         }
-//     })
-// })
+
 $(document).ready(function() {
     //get  all user
     $.ajax({
@@ -52,13 +20,13 @@ $(document).ready(function() {
                   var row = ` <tr>
                   <td>${value.id}</td>
                   <td>${value.fullName}</td>
-                  <td></td>
                   <td>${value.email}</td>
                   <td>${role[0].name}</td>
+                  <td>${value.avatar}</td>
                   <td>
                       <a href="#" class="btn btn-sm btn-primary btn-update" user-id=${value.id} >Sửa</a>
                       <a href="#" class="btn btn-sm btn-danger btn-delete" user-id=${value.id}>Xóa</a>
-                      <a href="user-details.html" class="btn btn-sm btn-info">Xem</a>
+                      <a href="#" class="btn btn-sm btn-info" user-id=${value.id}>Xem</a>
                   </td>
               </tr>`
               $("#example tbody").append(row);
@@ -196,6 +164,20 @@ $(document).ready(function() {
              
          })
      })
+     //move to profile user page
+     //delete user
+     $(document).on('click', 'a.btn-info', function(e) {
+      e.preventDefault(); 
+      const userId = e.target.getAttribute("user-id");
+      console.log(userId);
+      localStorage.setItem("userId", userId);
+      
+      window.location.replace("http://127.0.0.1:5500/user-details.html")
+
+   
+  })
+ 
+    
 })
 
     
